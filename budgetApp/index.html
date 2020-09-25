@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Budget App</title>
+</head>
+<body>
+    <!-- start parent -->
+    <div class="container">
+        <!-- start budget area -->
+        <div class="budget">
+            <form id="form-budget">
+                <label for="budget-input">Please Enter Your Budget</label>
+                <input type="number" id="budget-input">
+                <button type="button" id="budget-btn">Calculate</button>
+            </form>
+           
+        </div>
+        <!-- end budget area -->
+        <!-- start balance area -->
+        <div class="balance">
+            <div id="budget-amt">
+                <p>Budget</p>
+                <span><i class="fas fa-money-bill-alt"></i></span>
+                <p id="budget-value"></p>
+            </div>
+            <div id="expenses-amt">
+                <p>Expenses</p>
+                <span><i class="far fa-credit-card"></i></span>
+                <p id="expenses-value"></p>
+            </div>
+            <div id="balance-amt">
+                <p>Balance</p>
+                <span><i class="fas fa-dollar-sign"></i></span>
+                <p id="balance-value"></p>
+            </div>
+        </div>
+        <!-- end balance area -->
+        <!-- start expenses area -->
+        <div class="expenses">
+            <form id="form-expenses">
+                <label for="expenses-title">Please Enter Your Expense</label>
+                <input type="text" id="expenses-title">
+                <label for="expenses-input">Please Enter Expense Amount</label>
+                <input type="number" id="expenses-input">
+                <button type="button" id="expenses-btn">Calculate</button>
+            </form>
+        </div>
+        <!-- end expenses area -->
+        <!-- start items area -->
+        <div class="items">
+            <div class="expense-info">
+                <p>Expense Title</p>
+                <p>Expense Value</p>
+                <p></p>
+            </div>
+            <div id="item-list">
+                <!-- <div class="expense-info">
+                    <p>- Fix A Car and buyer</p>
+                    <p>5000</p>
+                    <p><i class="fas fa-edit"></i>
+                    <i class="fas fa-trash"></i></p>
+                </div>
+                <div class="expense-info">
+                    <p>- Pay Rent</p>
+                    <p>900</p>
+                    <p><i class="fas fa-edit"></i>
+                    <i class="fas fa-trash"></i></p>
+                </div> -->
+            </div>
+           
+        </div>
+        <!-- end items area -->
+    </div>
+     <!-- end parent -->
+    <script src="./script.js"></script>
+</body>
+</html>

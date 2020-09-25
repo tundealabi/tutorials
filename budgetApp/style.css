@@ -1,0 +1,75 @@
+
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container div{
+    /* width: 200px; */
+    /* height: 200px; */
+}
+.budget{
+    background: yellow;
+    flex-basis: 40%;
+    height: 200px;
+}
+.balance{
+    background: tomato;
+    flex-basis: 60%;
+    height: 200px;
+}
+.expenses{
+    background: violet;
+    flex-basis: 40%;
+    height: 200px;
+}
+.items{
+    background: turquoise;
+    flex-basis: 60%;
+}
+#form-budget, #form-expenses{
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    justify-content: space-around;
+}
+#form-budget #budget-btn,#form-expenses #expenses-btn{
+    padding: 0.6em;
+    width: fit-content;
+}
+
+.balance{
+    display: flex;
+    justify-content: space-around;
+}
+
+#item-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.expense-info{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+@media(max-width:800px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 100vh;
+        /* justify-content: space-around; */
+    }
+    .container div{
+        width: 100%;
+       height: 25vh;
+       flex-basis: 0%;
+    }
+}
